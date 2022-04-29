@@ -2,10 +2,10 @@ package exercise;
 
 class Point{
 	protected int x,y;
-//	public Point(int x, int y) {
-//		this.x=x;
-//		this.y=y;
-//	}
+	public Point(int x, int y) {
+		this.x=x;
+		this.y=y;
+	}
 	public int getX() {return x;}
 	public int getY() {return y;}
 	
@@ -18,8 +18,7 @@ class Point{
 public class ColorPoint extends Point{
 	private String color;
 	ColorPoint(int x, int y, String color) {
-		this.x=x;
-		this.y=y;
+		super(x,y);
 		this.color=color;
 	}
 	public void setPoint(int x, int y) {
