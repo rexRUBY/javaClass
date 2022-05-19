@@ -1,0 +1,6 @@
+1) int i = Integer.parseInt("20");
+2) double d = Double.parseDouble("35.9");
+3) String s = Boollean.toString(true);
+4) if(Character.isAlphabetic(c)) System.out.println("eng");
+5) String s = Integer.toBinaryString(n);
+6) String s = Integer.toHexString(50);
