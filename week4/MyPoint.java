@@ -10,7 +10,7 @@ public class MyPoint {
 	
 	@Override
 	public String toString(){
-		return getClass().getName()+"("+x+","+y+")";
+		return getClass().getSimpleName()+"("+x+","+y+")";
 	}
 
 	public static void main(String[] args) {
