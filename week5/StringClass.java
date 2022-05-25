@@ -32,3 +32,4 @@ public class StringEx {
 		System.out.println(c);
 	}
 }
+
