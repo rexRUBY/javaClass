@@ -1,50 +1,50 @@
 import java.util.Scanner;
 
 class Day {
-	private String work; //ÇÏ·çÀÇ ÇÒ ÀÏÀ» ³ªÅ¸³»´Â ¹®ÀÚ¿­
+	private String work; //í•˜ë£¨ì˜ í•  ì¼ì„ ë‚˜íƒ€ë‚´ëŠ” ë¬¸ìì—´
 	public void set(String work) { this.work=work; }
 	public String get() { return work; }
 	public void show() {
-		if(work==null) System.out.println("¾ø½À´Ï´Ù.");
-		else System.out.println(work+"ÀÔ´Ï´Ù.");
+		if(work==null) System.out.println("ì—†ìŠµë‹ˆë‹¤.");
+		else System.out.println(work+"ì…ë‹ˆë‹¤.");
 	}
 }
 
 
 public class MonthSchedule {
 	Scanner scanner = new Scanner(System.in);
-	Day day[];  //Day°´Ã¼ ¹è¿­
+	Day day[];  //Dayê°ì²´ ë°°ì—´
 	
 	public MonthSchedule(int n) {
 		day=new Day[n];
-		for(int i=0; i<n; i++) //°´Ã¼¹è¿­ ÃÊ±âÈ­
+		for(int i=0; i<n; i++) //ê°ì²´ë°°ì—´ ì´ˆê¸°í™”
 			day[i]=new Day();
-		System.out.println("ÀÌ¹ø´Ş ½ºÄÉÁÙ °ü¸® ÇÁ·Î±×·¥");
+		System.out.println("ì´ë²ˆë‹¬ ìŠ¤ì¼€ì¤„ ê´€ë¦¬ í”„ë¡œê·¸ë¨");
 	}
 	
 	public void input() {
-		System.out.print("³¯Â¥(1~30) ? ");
+		System.out.print("ë‚ ì§œ(1~30) ? ");
 		int date=scanner.nextInt();
-		System.out.print("ÇÒÀÏ(ºóÄ­¾øÀÌ ÀÔ·Â)? ");
+		System.out.print("í• ì¼(ë¹ˆì¹¸ì—†ì´ ì…ë ¥)? ");
 		String todo=scanner.next();
 		day[date-1].set(todo);
 	}
 	
 	public void view() {
-		System.out.print("³¯Â¥(1~30) ? ");
+		System.out.print("ë‚ ì§œ(1~30) ? ");
 		int date=scanner.nextInt();
-		System.out.print(date+"ÀÏÀÇ ÇÒ ÀÏÀº ");
+		System.out.print(date+"ì¼ì˜ í•  ì¼ì€ ");
 		day[date-1].show();
 	}
 	
 	public void finish() {
-		System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+		System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 		System.exit(0);
 	}
 	
 	public void run() {
 		while(true) {
-			System.out.print("ÇÒ ÀÏ (ÀÔ·Â:1, º¸±â:2, ³¡³»±â:3) >>");
+			System.out.print("í•  ì¼ (ì…ë ¥:1, ë³´ê¸°:2, ëë‚´ê¸°:3) >>");
 			int choice=scanner.nextInt();
 			if(choice==1)
 				input();
@@ -53,7 +53,7 @@ public class MonthSchedule {
 			else if(choice==3)
 				finish();
 			else
-				System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+				System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 			System.out.println();
 		}
 	}
