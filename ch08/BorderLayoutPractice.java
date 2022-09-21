@@ -24,3 +24,4 @@ public class BorderLayoutPractice extends JFrame {
         new BorderLayoutPractice();
     }
 }
+
