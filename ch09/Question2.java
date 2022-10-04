@@ -22,8 +22,8 @@ public class Question2 extends JFrame {
 
         setSize(300,200);
         setVisible(true);
-        setFocusable(true);
-        requestFocus();
+        c.setFocusable(true);
+        c.requestFocus();
     }
     public static void main(String[] args) {
         new Question2();
