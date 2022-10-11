@@ -35,7 +35,7 @@ public class Question5 extends JFrame {
 				}
 				String fileName = JOptionPane.showInputDialog(MenuItemActionListener.this, 
 						"저장할 파일명을 입력하세요");
-				if(fileName == null) {
+				if(fileName.) {
 					JOptionPane.showMessageDialog(MenuItemActionListener.this,
 							"파일을 저장하지 않습니다.",
 							"Warning", JOptionPane.WARNING_MESSAGE);
